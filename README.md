@@ -95,7 +95,7 @@ nifty-trading-decision-system/
 ├── output/                 # Results (gitignored)
 │
 ├── config.py              # Configuration
-├── main.py                # Baseline training
+├── basic_approach.py                # Baseline training
 ├── train_production.py    # Production training ⭐
 ├── streamlit_app.py       # Web dashboard 🌐
 ├── requirements.txt       # Dependencies
@@ -171,7 +171,7 @@ timestamp,close,predicted,model_call,model_pnl
 
 ```bash
 # Run the complete pipeline
-python main.py
+python basic_approach.py
 
 # This will:
 # - Load and preprocess data

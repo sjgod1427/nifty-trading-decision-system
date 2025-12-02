@@ -299,7 +299,7 @@ def main():
                 st.caption("Compare different model performances")
             else:
                 st.warning("⚠️ No other model predictions found")
-                st.info("Run `python main.py` to generate predictions from all models")
+                st.info("Run `python basic_approach.py` to generate predictions from all models")
                 selected_pred_path = None
                 selected_pred_name = None
 
@@ -342,7 +342,7 @@ def main():
         if selection_mode == "🏆 Best Model (Production)":
             st.info("💡 Run `python train_production.py` to generate best model predictions")
         else:
-            st.info("💡 Run `python main.py` to train all models and generate predictions")
+            st.info("💡 Run `python basic_approach.py` to train all models and generate predictions")
         
         st.stop()
 

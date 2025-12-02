@@ -66,7 +66,7 @@ The solution follows a **modular architecture** for:
 
 ```
 ┌─────────────────┐
-│  main.py        │  ← Orchestrator
+│basic_approach.py        │  ← Orchestrator
 └────────┬────────┘
          │
          ├──→ DataLoader         (Load & Clean)
@@ -723,7 +723,7 @@ With 57.82% win rate and 1:1.5 risk/reward:
 
 **Core Scripts**:
 - `train_production.py` - Best training strategy (57.82%)
-- `main.py` - Baseline reference (53.49%)
+- `basic_approach.py` - Baseline reference (53.49%)
 
 **Experiments** (archived in `experiments/`):
 - `train_optimized.py` - Hyperparameter tuning
