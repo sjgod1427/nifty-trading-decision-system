@@ -3,14 +3,14 @@ ULTIMATE STRATEGY RESULTS
 ======================================================================
 
                                 Strategy  Accuracy  Acc %
-Baseline (0.15% threshold + calibration)  0.578244 57.82%
-              High Vol + Trending Filter  0.575163 57.52%
-                  Opening Session Filter  0.533835 53.38%
- ULTIMATE: Opening + High Vol + Trending  0.418605 41.86%
+Baseline (0.15% threshold + calibration)  0.564885 56.49%
+                  Opening Session Filter  0.541353 54.14%
+              High Vol + Trending Filter  0.496732 49.67%
+ ULTIMATE: Opening + High Vol + Trending  0.395349 39.53%
 
 ======================================================================
 BEST STRATEGY: Baseline (0.15% threshold + calibration)
-Accuracy: 0.5782 (57.82%)
+Accuracy: 0.5649 (56.49%)
 Original Baseline: 0.5349 (53.49%)
-Improvement: +4.33 percentage points
+Improvement: +3.00 percentage points
 ======================================================================
