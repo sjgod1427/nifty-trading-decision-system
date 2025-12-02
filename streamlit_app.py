@@ -364,52 +364,7 @@ def main():
 
     # Tab 1: Dashboard
     with tab1:
-        st.markdown("### 📊 Overview")
 
-        # Key metrics
-        col1, col2, col3, col4, col5 = st.columns(5)
-
-        with col1:
-            st.metric(
-                "Total Predictions",
-                f"{len(df):,}",
-                help="Total number of predictions made"
-            )
-
-        with col2:
-            buy_count = len(df[df['model_call'] == 'buy'])
-            st.metric(
-                "Buy Signals",
-                f"{buy_count:,}",
-                f"{(buy_count/len(df)*100):.1f}%"
-            )
-
-        with col3:
-            sell_count = len(df[df['model_call'] == 'sell'])
-            st.metric(
-                "Sell Signals",
-                f"{sell_count:,}",
-                f"{(sell_count/len(df)*100):.1f}%"
-            )
-
-        with col4:
-            final_pnl = df['model_pnl'].iloc[-1]
-            st.metric(
-                "Final PnL",
-                f"₹{final_pnl:,.2f}",
-                help="Cumulative profit/loss"
-            )
-
-        with col5:
-            max_pnl = df['model_pnl'].max()
-            min_pnl = df['model_pnl'].min()
-            st.metric(
-                "PnL Range",
-                f"₹{max_pnl - min_pnl:,.2f}",
-                help="Difference between max and min PnL"
-            )
-
-        st.markdown("---")
 
         # Charts
         col1, col2 = st.columns(2)
