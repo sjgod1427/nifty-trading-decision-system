@@ -1,0 +1,23 @@
+============================================================
+LSTM MODEL - PERFORMANCE METRICS
+============================================================
+
+TRAINING SET METRICS:
+------------------------------------------------------------
+Mean Squared Error (MSE):     831.9649
+Root Mean Squared Error (RMSE): 28.8438
+Mean Absolute Error (MAE):    20.4540
+R² Score:                     0.9998
+Mean Absolute Percentage Error (MAPE): 0.11%
+Accuracy:                     99.89%
+
+TESTING SET METRICS:
+------------------------------------------------------------
+Mean Squared Error (MSE):     4464.5116
+Root Mean Squared Error (RMSE): 66.8170
+Mean Absolute Error (MAE):    54.4223
+R² Score:                     0.9926
+Mean Absolute Percentage Error (MAPE): 0.22%
+Accuracy:                     99.78%
+
+============================================================

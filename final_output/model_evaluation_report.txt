@@ -1,0 +1,71 @@
+======================================================================
+NIFTY PRICE PREDICTION - MODEL EVALUATION REPORT
+======================================================================
+
+BEST STRATEGY SUMMARY
+----------------------------------------------------------------------
+Strategy: Probability Calibration
+Model: Random Forest (Calibrated)
+Accuracy: 0.5649 (56.49%)
+Baseline: 0.5349 (53.49%)
+Improvement: +3.00 percentage points
+
+ALL STRATEGIES COMPARISON
+----------------------------------------------------------------------
+               Strategy                        Model  Accuracy Accuracy %
+Probability Calibration   Random Forest (Calibrated)  0.578285     56.49%
+      Advanced Stacking 4 models + Gradient Boosting  0.553435     55.34%
+Session-Based (Average)    Random Forest per session  0.545832     54.58%
+ Regime-Based (Average)          CatBoost per regime  0.520891     52.09%
+   Feature Interactions                     CatBoost  0.519084     51.91%
+
+TEST SET PERFORMANCE
+----------------------------------------------------------------------
+Accuracy: 0.5687 (56.87%)
+Test samples: 524
+
+Confusion Matrix:
+                 Predicted
+                 0      1
+Actual  0        88    149
+        1        77    210
+
+TRADING SIGNALS
+----------------------------------------------------------------------
+Buy signals:  359
+Sell signals: 165
+
+PnL SUMMARY
+----------------------------------------------------------------------
+Final PnL: -4,708,348.60
+Max PnL:   180,234.30
+Min PnL:   -4,708,348.60
+
+FEATURE INFORMATION
+----------------------------------------------------------------------
+Total features available: 51
+Features used: 20
+
+Top 20 features:
+   1. momentum_strength
+   2. macd
+   3. vol_expansion
+   4. atr
+   5. price_position
+   6. prev_return
+   7. volatility
+   8. macd_signal
+   9. return_3min
+  10. atr_pct
+  11. bb_width
+  12. intraday_return
+  13. return_5min
+  14. dist_from_ema_50
+  15. stoch_d
+  16. rsi
+  17. hl_range
+  18. macd_diff
+  19. sma_10_20_cross
+  20. return_10min
+
+======================================================================

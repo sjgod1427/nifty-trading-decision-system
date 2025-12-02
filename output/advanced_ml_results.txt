@@ -1,0 +1,48 @@
+======================================================================
+ADVANCED ML STRATEGIES RESULTS
+======================================================================
+
+ALL STRATEGIES:
+----------------------------------------------------------------------
+               Strategy                        Model  Accuracy Accuracy %
+Probability Calibration   Random Forest (Calibrated)  0.564885     56.49%
+      Advanced Stacking 4 models + Gradient Boosting  0.553435     55.34%
+Session-Based (Average)    Random Forest per session  0.545832     54.58%
+ Regime-Based (Average)          CatBoost per regime  0.520891     52.09%
+   Feature Interactions                     CatBoost  0.519084     51.91%
+
+======================================================================
+BEST STRATEGY: Probability Calibration
+Model: Random Forest (Calibrated)
+Accuracy: 0.5649 (56.49%)
+Baseline: 0.5349 (53.49%)
+Improvement: +3.00 percentage points
+======================================================================
+
+REGIME-BASED MODELS:
+----------------------------------------------------------------------
+           Regime  Train Size  Test Size  Accuracy Accuracy %
+  low_vol_ranging         250        108  0.500000     50.00%
+ low_vol_trending         152         66  0.545455     54.55%
+high_vol_trending         260        112  0.562500     56.25%
+ high_vol_ranging         191         82  0.475610     47.56%
+
+SESSION-BASED MODELS:
+----------------------------------------------------------------------
+Session  Train Size  Test Size  Accuracy Accuracy %
+Opening         207         89  0.584270     58.43%
+    Mid         287        124  0.491935     49.19%
+Closing         359        155  0.561290     56.13%
+
+CALIBRATED MODELS:
+----------------------------------------------------------------------
+        Model  Base Acc  Calibrated Acc  Improvement      AUC
+Random Forest  0.557252        0.564885     0.007634 0.549185
+     CatBoost  0.519084        0.534351     0.015267 0.524104
+
+STACKING ENSEMBLES:
+----------------------------------------------------------------------
+       Meta-Learner  Accuracy Accuracy %
+  Gradient Boosting  0.553435     55.34%
+Logistic Regression  0.545802     54.58%
+           CatBoost  0.536260     53.63%

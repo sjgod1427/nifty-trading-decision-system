@@ -1,0 +1,16 @@
+======================================================================
+ADVANCED STRATEGIES RESULTS
+======================================================================
+
+                         Strategy    Best Model  Accuracy Accuracy %
+0.15% Threshold + Top 20 Features Random Forest  0.543893     54.39%
+ 3-Candle Ahead + Top 20 Features      CatBoost  0.543874     54.39%
+                  Top 20 Features Random Forest  0.526135     52.61%
+
+======================================================================
+BEST STRATEGY: 0.15% Threshold + Top 20 Features
+Model: Random Forest
+Accuracy: 0.5439 (54.39%)
+Baseline: 0.5349 (53.49%)
+Improvement: +0.90 percentage points
+======================================================================
